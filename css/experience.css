@@ -1,0 +1,68 @@
+:root {
+    --background-color: white;
+    --text-color: black;
+}
+
+.experience-block {
+    display: flex;
+    flex-direction: column;
+    background: var(--background-color);
+    color: var(--text-color);
+    border-radius: 15px;
+    padding: 18px;
+    gap: 8px;
+}
+.experience-block > .date-information {
+    display: flex;
+    justify-content: space-between;
+}
+.experience-block > .date-information > button {
+    background: #7E731266;
+    border: none;
+    outline: none;
+    border-radius: 59px;
+    font-size: 1.3cap;
+    padding: 6px 15px;
+    font-weight: 500;
+    color: #DDF163;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+.experience-block > .date-information > p {
+    font-size: 1.3cap;
+    font-weight: 500;
+    line-height: 0%;
+}
+.experience-block > .job-data {
+    display: flex;
+    gap: 20px;
+}
+.experience-block > .job-data > .name-of-work-position {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    font-size: 1.2cap;
+    font-weight: 500;
+    line-height: 1;
+    line-break: normal;
+}
+.experience-block > .job-data > .name-of-work-position > h3 {
+    font-size: 2.5cap;
+    font-weight: 500;
+    line-height: 1;
+    line-break: normal;
+}
+.experience-block > .job-data > .work-responsibilities {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    list-style: disc;
+}
+.experience-block > .job-data > .work-responsibilities > li {
+    font-size: 1.4cap;
+    line-height: 1.7;
+    font-weight: 400;
+    line-break: normal;
+}

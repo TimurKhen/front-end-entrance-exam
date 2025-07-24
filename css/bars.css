@@ -1,0 +1,34 @@
+:root {
+    --level: "0%";
+}
+
+.language-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 17px;
+}
+.language-bar > p {
+    width: 5vw;
+    font-size: 2.5cap;
+    font-weight: 500;
+    line-height: 0;
+}
+.language-bar > .bar-canvas {
+    display: flex;
+    justify-self: right;
+    height: 3vh;
+    border-radius: 3px;
+    overflow: hidden;
+    width: 70%;
+}
+.language-bar > .bar-canvas::after {
+    content: '';
+    display: block;
+    height: 100%;
+    background-color: #28D979;
+    width: var(--level, 0%);
+    border-radius: 3px;
+    transition: width 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+}

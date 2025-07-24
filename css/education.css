@@ -1,0 +1,52 @@
+:root {
+    --isLikedDisplay: 'none';
+    --backgroundColor: 'white';
+    --textColor: 'black';
+    --tagsColor: #149063;
+}
+
+.education-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: var(--backgroundColor);
+    color: var(--textColor);
+    border-radius: 10px;
+    padding: 20px;
+    min-height: 20vh;
+    transition: background 0.3s, color 0.3s;
+}
+.education-block > .date-and-is-favourite {
+    display: flex;
+    width: 100%;
+    height: 2.5vh;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 150%;
+}
+.education-block > .name-and-tags{
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+}
+.education-block > .date-and-is-favourite > p {
+    font-size: 2.3cap;
+    font-weight: 500;
+}
+.education-block > .date-and-is-favourite > img {
+    display: var(--isLikedDisplay);
+    height: 100%;
+}
+.education-block > .name-and-tags > h2 {
+    font-size: 3.3cap;
+    font-weight: 500;
+    line-height: 0;
+}
+.education-block p {
+    font-size: 2cap;
+    font-weight: 400;
+    line-break: normal;
+}
+.education-block > .name-and-tags > p#tags {
+    color: var(--tagsColor);
+}
