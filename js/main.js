@@ -33,14 +33,14 @@ function downloadPDF() {
         html2canvas: {
             scale: 1,
             width: contentWidth,
-            height: contentHeight + 200,
+            height: contentHeight + 300,
             // height: element.scrollHeight,
             windowWidth: contentWidth,
             // windowHeight: contentHeight,
             useCORS: true,
             // scrollY: 1,
             x: contentWidth / 3 - 120,
-            y: -250
+            // y: -250
         },
         jsPDF: {
             unit: 'mm',
