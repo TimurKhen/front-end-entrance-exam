@@ -40,7 +40,7 @@ function downloadPDF() {
             useCORS: true,
             // scrollY: 1,
             x: contentWidth / 3 - 120,
-            y: 300
+            y: 100
         },
         jsPDF: {
             unit: 'mm',
